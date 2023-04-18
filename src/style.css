@@ -1,0 +1,19 @@
+body {
+  margin: 0 auto;
+}
+nav {
+  background-color: greenyellow;
+}
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+    url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/077/670/original/pexels-jéshoots-230743.jpg?1681788031");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  padding: 150px 0;
+  font-weight: 100;
+  line-height: 50px;
+  margin: 0 auto;
+  display: block;
+}
