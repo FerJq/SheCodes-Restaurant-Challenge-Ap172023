@@ -1,4 +1,6 @@
 body {
+  color: white;
+  background-color: black;
   margin: 0 auto;
 }
 nav {
@@ -16,4 +18,134 @@ header {
   line-height: 50px;
   margin: 0 auto;
   display: block;
+}
+
+main {
+  background-color: rgb(0, 0, 0);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  font-weight: 100;
+}
+
+.container {
+  max-width: 100%;
+}
+.intro {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+    url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/077/836/original/pexels-lucie-liz-3256807.jpg?1681875773");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.intro p {
+  text-align: center;
+}
+
+.intro iframe {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+.introduction-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 2%;
+}
+
+.menu {
+  display: grid;
+  grid-gap: 10px;
+}
+
+/* Menu */
+.grid-menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.feijao {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+    url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/077/673/original/1.-pastel-feijao-768x432.jpg?1681790513");
+  padding: 2%;
+}
+
+.deus {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+    url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/077/674/original/2.-pao-de-deus-768x432.jpg?1681790518");
+  padding: 2%;
+}
+
+.brioche {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+    url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/077/675/original/3.-croissant-brioche-768x432.jpg?1681790530");
+  padding: 2%;
+}
+
+.queque {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+    url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/077/679/original/4.-queque-768x432.jpg?1681790584");
+  padding: 2%;
+}
+
+.arroz {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+    url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/077/680/original/5.-bolo-arroz-768x432.jpg?1681790590");
+  padding: 2%;
+}
+
+.queijada {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+    url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/077/681/original/6.-queijada-768x432.jpg?1681790597");
+  padding: 2%;
+}
+
+.travesseiros {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+    url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/077/682/original/7.-travesseiros-768x432.jpg?1681790603");
+  padding: 2%;
+}
+
+.jesuita {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+    url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/077/683/original/8.-jesuitas-768x432.jpg?1681790611");
+  padding: 2%;
+}
+
+.bocado {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+    url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/077/684/original/9-bom-bocado-768x432.jpg?1681790617");
+  padding: 2%;
+}
+
+.salame {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+    url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/077/685/original/10.-salame-de-chocolate-768x432.jpg?1681790628");
+  padding: 2%;
+}
+.follow {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+    url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/077/837/original/pexels-lisa-fotios-1599497.jpg?1681875935");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.delivery-container {
+  color: black;
+  background-color: bisque;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 10%;
+}
+.follow-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px;
+  padding: 10%;
+}
+
+.follow-container .inst-frame {
+  max-width: 600px;
 }
