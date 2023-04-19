@@ -1,9 +1,15 @@
 body {
   color: rgb(0, 0, 0);
-  background-color: wheat;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/077/950/original/pexels-mylo-kaye-10785618.jpg?1681929358");
   margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 nav {
+  margin: 0 auto;
+
   background-color: greenyellow;
 }
 header {
@@ -13,15 +19,15 @@ header {
   background-position: center;
   background-size: cover;
   color: white;
-  padding: 150px 0;
+  padding: 130px 0;
   font-weight: 100;
-  line-height: 50px;
+  line-height: 30px;
   margin: 0 auto;
   display: block;
 }
 
 main {
-  margin: 40px;
+  margin: 0 auto;
   color: white;
 }
 
@@ -31,15 +37,26 @@ main h2 {
   font-size: 40px;
 }
 
+footer {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+    url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/077/671/original/pexels-isaw-company-1005406.jpg?1681788042");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .container {
-  max-width: 100%;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 1700px;
+  background-color: white;
 }
 .intro {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
-    url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/077/836/original/pexels-lucie-liz-3256807.jpg?1681875773");
+  margin: 0 auto;
+
   background-size: 100%;
   background-repeat: no-repeat;
-  color: white;
+  color: rgb(0, 0, 0);
   padding: 5%;
 }
 
@@ -54,9 +71,11 @@ main h2 {
 }
 
 .intro iframe {
+  box-shadow: 4px 4px 6px grey;
   margin: 0 auto;
   display: block;
   text-align: center;
+  max-width: 100%;
 }
 .introduction-container {
   display: grid;
@@ -64,20 +83,57 @@ main h2 {
   padding: 2%;
 }
 
+/* Menu */
+.madewithlove {
+  padding: 2%;
+  background-color: black;
+}
+
 .menu {
   display: grid;
   grid-gap: 10px;
 }
 
-/* Menu */
 .grid-menu {
+  margin: 0 auto;
+  padding: 4%;
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/077/670/original/pexels-jéshoots-230743.jpg?1681788031");
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-gap: 10px;
 }
 
-.menu h6 {
+.grid-menu div {
+  border-radius: 10px;
+  line-height: 25px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
   margin: 0 auto;
+}
+
+.grid-menu div p {
+  padding: 4%;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu div {
+  box-shadow: 4px 4px 6px rgb(0, 0, 0);
+  max-width: 450px;
+}
+
+.menu img {
+  max-width: 100%;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.menu h6 {
+  margin: 20px auto;
   padding: 0 auto;
   color: wheat;
   font-size: 30px;
@@ -86,61 +142,51 @@ main h2 {
 .feijao {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
     url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/077/673/original/1.-pastel-feijao-768x432.jpg?1681790513");
-  padding: 2%;
 }
 
 .deus {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
     url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/077/674/original/2.-pao-de-deus-768x432.jpg?1681790518");
-  padding: 2%;
 }
 
 .brioche {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
     url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/077/675/original/3.-croissant-brioche-768x432.jpg?1681790530");
-  padding: 2%;
 }
 
 .queque {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
     url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/077/679/original/4.-queque-768x432.jpg?1681790584");
-  padding: 2%;
 }
 
 .arroz {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
     url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/077/680/original/5.-bolo-arroz-768x432.jpg?1681790590");
-  padding: 2%;
 }
 
 .queijada {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
     url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/077/681/original/6.-queijada-768x432.jpg?1681790597");
-  padding: 2%;
 }
 
 .travesseiros {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
     url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/077/682/original/7.-travesseiros-768x432.jpg?1681790603");
-  padding: 2%;
 }
 
 .jesuita {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
     url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/077/683/original/8.-jesuitas-768x432.jpg?1681790611");
-  padding: 2%;
 }
 
 .bocado {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
     url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/077/684/original/9-bom-bocado-768x432.jpg?1681790617");
-  padding: 2%;
 }
 
 .salame {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
     url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/077/685/original/10.-salame-de-chocolate-768x432.jpg?1681790628");
-  padding: 2%;
 }
 .follow {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
@@ -152,13 +198,32 @@ main h2 {
 /*Delivery */
 .delivery-container {
   color: black;
-  background-color: bisque;
+  background-color: wheat;
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 2%;
 }
+.delivery-container form {
+  max-width: 100%;
+  padding: 5%;
+}
+
+.form-container label {
+  padding: 2%;
+  max-width: 100%;
+  font-size: 35px;
+  text-align: center;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+}
+
+.delivery-container input {
+  max-width: 100%;
+  padding: 0.5%;
+}
 
 .delivery-container img {
+  box-shadow: 4px 4px 6px grey;
   max-width: 100%;
 }
 .follow-container {
@@ -169,10 +234,17 @@ main h2 {
 }
 
 .follow-container .inst-frame {
-  max-width: 600px;
+  text-align: center;
+  max-width: 300px;
+  margin: 0 auto;
 }
 
 /* Contact */
+.contactus {
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(38, 38, 38);
+}
 .contact-container {
   padding: 2%;
   display: grid;
@@ -187,4 +259,14 @@ main h2 {
   color: black;
   background-color: wheat;
   text-align: center;
+}
+
+.sourcecode {
+  text-align: center;
+  background-color: black;
+}
+
+.sourcecode a {
+  color: greenyellow;
+  text-decoration: none;
 }
