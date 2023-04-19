@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="aos-by-red.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="src/style.css" />
     <title>Pasteries of Lisbon</title>
   </head>
@@ -14,17 +16,32 @@
         <h1>Pastry of Lisbon</h1>
         <h6>Boa Vita!</h6>
       </header>
+      <!--Introduction section-->
       <section class="introduction">
-        <h3>A NOSSA HISTÓRIA</h3>
-        <p>
-          A Panificação Reunida de S. Roque, Lda foi fundada em 1961 e resultou
-          da fusão de várias padarias mais pequenas que se encontravam
-          espalhadas pela zona do Bairro Alto. Actualmente conta com uma fabrica
-          de pão, uma fabrica de bolos, com sete pastelarias e um deposito de
-          pão sendo uma referência na área das padarias e pastelarias da zona da
-          grande Lisboa.
-        </p>
+        <div>
+          <h3>A NOSSA HISTÓRIA</h3>
+          <p>
+            A Panificação Reunida de S. Roque, Lda foi fundada em 1961 e
+            resultou da fusão de várias padarias mais pequenas que se
+            encontravam espalhadas pela zona do Bairro Alto. Actualmente conta
+            com uma fabrica de pão, uma fabrica de bolos, com sete pastelarias e
+            um deposito de pão sendo uma referência na área das padarias e
+            pastelarias da zona da grande Lisboa.
+          </p>
+        </div>
+        <div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6226.316463764172!2d-9.145686!3d38.714176!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd19331787156cab%3A0x65bc9bdbebc37d14!2sPASTELARIA%20DA%20RUA%20DA%20ROSA!5e0!3m2!1spt-PT!2spt!4v1681860413785!5m2!1spt-PT!2spt"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
       </section>
+      <!-- Menu section-->
       <main>
         <h3>Our delicacies</h3>
         <div class="menu-container">
@@ -140,10 +157,23 @@
             </div>
           </div>
         </div>
+        <!--Delivery Section-->
+        <section class="delivery">
+          <div class="delivery-container">
+            <label for="delivery">Buy our Pastries Online!</label>
+            <form action="#">
+              <input type="search" />
+              <input type="search" />
+              <input type="number" />
+              <input type="submit" />
+            </form>
+          </div>
+        </section>
       </main>
+      <!--Follow section-->
       <section class="follow">
         <div class="follow-container">
-          <div class="inst-frame">
+          <div class="inst-frame" data-aos="fade-right">
             <blockquote
               class="instagram-media"
               data-instgrm-permalink="https://www.instagram.com/p/Cors_sPoVo1/?utm_source=ig_embed&amp;utm_campaign=loading"
@@ -428,7 +458,7 @@
             </blockquote>
             <script async src="//www.instagram.com/embed.js"></script>
           </div>
-          <div class="inst-frame">
+          <div class="inst-frame" data-aos="fade-down">
             <blockquote
               class="instagram-media"
               data-instgrm-permalink="https://www.instagram.com/p/CpAB-0GtR06/?utm_source=ig_embed&amp;utm_campaign=loading"
@@ -713,7 +743,7 @@
             </blockquote>
             <script async src="//www.instagram.com/embed.js"></script>
           </div>
-          <div class="inst-frame">
+          <div class="inst-frame" data-aos="fade-left">
             <blockquote
               class="instagram-media"
               data-instgrm-permalink="https://www.instagram.com/p/Ch1lSfgKjq-/?utm_source=ig_embed&amp;utm_campaign=loading"
@@ -1002,31 +1032,42 @@
       </section>
       <footer>
         <div class="contact-container">
-          <div>
-            <i class="fa-solid fa-phone-rotary"></i>
-            <i class="fa-solid fa-phone-rotary"></i>
-            <i class="fa-solid fa-fax"></i>
-            <i class="fa-sharp fa-solid fa-envelopes-bulk"></i>
+          <div class="section-contact">
+            <div>
+              <i class="fa-sharp fa-solid fa-phone-volume"></i> 213 224 350
+            </div>
+            <div>
+              <i class="fa-sharp fa-solid fa-phone-volume"></i> 93 522 43 52
+            </div>
+          </div>
+          <div class="section-contact">
+            <div><i class="fa-solid fa-fax"></i> 213 224 352</div>
+            <div>
+              <i class="fa-sharp fa-solid fa-envelopes-bulk"></i>
+              <a href="mailto:panifsroque@gmail.com">panifsroque@gmail.com</a>
+            </div>
           </div>
           <div>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6226.316463764172!2d-9.145686!3d38.714176!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd19331787156cab%3A0x65bc9bdbebc37d14!2sPASTELARIA%20DA%20RUA%20DA%20ROSA!5e0!3m2!1spt-PT!2spt!4v1681860413785!5m2!1spt-PT!2spt"
-              width="600"
-              height="450"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
+            <i class="fa-solid fa-location-dot"></i>
+            Rosa 190 R. da Rosa 190, 1200-348 Lisboa
           </div>
         </div>
       </footer>
     </div>
     <!--JavaScript-->
     <script src="src/app.js"></script>
+    <!--Font Awesome-->
     <script
       src="https://kit.fontawesome.com/12e117d926.js"
       crossorigin="anonymous"
     ></script>
+    <!--Aos-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 3000,
+        once: true,
+      });
+    </script>
   </body>
 </html>
