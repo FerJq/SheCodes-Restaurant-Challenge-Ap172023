@@ -2,16 +2,31 @@ body {
   color: rgb(0, 0, 0);
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/077/950/original/pexels-mylo-kaye-10785618.jpg?1681929358");
-  margin: 0 auto;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  margin: 0 auto;
 }
 nav {
   margin: 0 auto;
-
   background-color: greenyellow;
+  padding: 0.6%;
+  font-size: 23px;
 }
+nav span {
+  padding: 1%;
+}
+
+nav a {
+  color: black;
+  transition: all 200ms ease-in-out;
+}
+
+nav a:hover {
+  color: blue;
+  transition: all 200ms ease-in-out;
+}
+
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
     url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/077/670/original/pexels-jéshoots-230743.jpg?1681788031");
@@ -26,7 +41,20 @@ header {
   display: block;
 }
 
+header h1 {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-size: 90px;
+}
+header h6 {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-size: 40px;
+  color: greenyellow;
+}
+
 main {
+  text-align: center;
   margin: 0 auto;
   color: white;
 }
@@ -38,17 +66,28 @@ main h2 {
 }
 
 footer {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)),
     url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/077/671/original/pexels-isaw-company-1005406.jpg?1681788042");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+a {
+  font-weight: 600;
+  color: greenyellow;
+  text-decoration: none;
+  transition: all 200ms ease-in-out;
+}
+
+a:hover {
+  transition: all 200ms ease-in-out;
+  color: rgb(255, 170, 0);
+}
 .container {
   padding: 0;
   margin: 0 auto;
-  max-width: 1700px;
+  max-width: 1500px;
   background-color: white;
 }
 .intro {
@@ -188,15 +227,10 @@ footer {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
     url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/077/685/original/10.-salame-de-chocolate-768x432.jpg?1681790628");
 }
-.follow {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
-    url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/077/837/original/pexels-lisa-fotios-1599497.jpg?1681875935");
-  background-repeat: no-repeat;
-  background-position: center;
-}
 
 /*Delivery */
 .delivery-container {
+  text-align: left;
   color: black;
   background-color: wheat;
   display: grid;
@@ -226,30 +260,47 @@ footer {
   box-shadow: 4px 4px 6px grey;
   max-width: 100%;
 }
+
 .follow-container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+    url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/077/837/original/pexels-lisa-fotios-1599497.jpg?1681875935");
+  background-repeat: no-repeat;
+  background-position: center;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 40px;
-  padding: 10%;
+  padding: 1%;
+  margin: 0 auto;
 }
 
-.follow-container .inst-frame {
-  text-align: center;
-  max-width: 300px;
-  margin: 0 auto;
+.inst-frame {
+  margin: 10px auto;
+  max-width: 400px;
 }
 
 /* Contact */
 .contactus {
-  text-align: center;
-  background-color: rgb(255, 255, 255);
-  border: 1px solid rgb(38, 38, 38);
+  padding: 1%;
+  text-align: start;
+  background-color: rgb(0, 0, 0);
+  color: white;
 }
 .contact-container {
+  color: white;
   padding: 2%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: center;
   text-align: center;
+}
+
+.contact-container i {
+  color: greenyellow;
+  font-size: 30px;
+  padding: 10px;
+}
+
+.section-contact {
+  text-align: center;
+  font-size: 20px;
 }
 
 .address {
@@ -266,7 +317,56 @@ footer {
   background-color: black;
 }
 
-.sourcecode a {
-  color: greenyellow;
-  text-decoration: none;
+@media (max-width: 760px) {
+  header h1 {
+    font-size: 40px;
+  }
+  header h6 {
+    font-size: 25px;
+  }
+  blockquote {
+    padding: 0;
+    margin: 0 auto;
+    display: block;
+    max-width: 100px;
+  }
+  #dnone {
+    display: none;
+  }
+
+  .follow {
+    display: none;
+  }
+  .introduction-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .menu {
+    display: block;
+  }
+  .delivery-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .delivery-container img {
+    display: none;
+  }
+
+  .follow {
+    margin: 0 auto;
+    padding: 0 auto;
+  }
+  .follow-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .follow-container .inst-frame {
+    margin: 0 auto;
+    padding: 0 auto;
+    max-width: 100px;
+    text-align: center;
+    display: block;
+  }
 }
