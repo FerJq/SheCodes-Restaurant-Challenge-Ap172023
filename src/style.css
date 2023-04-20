@@ -242,7 +242,7 @@ a:hover {
   background-color: wheat;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 2%;
+  padding: 0.5%;
 }
 .delivery-container form {
   max-width: 100%;
