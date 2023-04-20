@@ -89,6 +89,7 @@ a:hover {
   margin: 0 auto;
   max-width: 1500px;
   background-color: white;
+  box-shadow: 5px 10px 6px rgb(23, 23, 23);
 }
 .intro {
   margin: 0 auto;
@@ -163,6 +164,12 @@ a:hover {
 .menu div {
   box-shadow: 4px 4px 6px rgb(0, 0, 0);
   max-width: 450px;
+  transition: all 400ms ease-in-out;
+}
+
+.menu div:hover {
+  transition: all 500ms ease-in-out;
+  filter: brightness(1.2);
 }
 
 .menu img {
