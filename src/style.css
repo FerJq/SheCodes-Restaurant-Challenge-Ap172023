@@ -263,6 +263,13 @@ a:hover {
   padding: 0.5%;
 }
 
+.image-delivery {
+  display: block;
+  text-align: center;
+  margin: 40 auto;
+  padding: 4%;
+}
+
 .delivery-container img {
   box-shadow: 4px 4px 6px grey;
   max-width: 100%;
